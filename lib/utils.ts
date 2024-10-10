@@ -14,3 +14,7 @@ export const formatEventDescription = (duration: number) => {
   if (minutes === 0) return hoursString
   return `${hoursString} ${minutesString}`
 }
+
+export function timeToInt(time: string) {
+  return parseFloat(time.replace(":", "."))
+}
